@@ -19,7 +19,7 @@ const About = () => {
                 <div className="relative w-48 h-48 md:w-64 md:h-64">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-xl"></div>
                   <img
-                    src="public/denisson.png"
+                    src="/portfolio/denisson.png"
                     alt="Denisson Freitas"
                     className="relative w-full h-full object-cover rounded-full border-4 border-primary/50 glow-border"
                   />
