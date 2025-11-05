@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="font-orbitron font-bold text-4xl md:text-5xl mb-4">
               <span className="neon-text">Sobre Mim</span>
@@ -13,15 +13,32 @@ const About = () => {
           </div>
 
           <div className="glass-card p-8 md:p-12 rounded-2xl glow-border mb-12 animate-fade-in">
-            <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90 mb-6">
-              Olá, sou <span className="text-primary font-semibold">Denisson Freitas</span>, um cristão, sergipano e obstinado a seguir carreira no mundo da Tecnologia da Informação.
-            </p>
-            <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90 mb-6">
-              Tive o privilégio de concluir meu bacharelado em <span className="text-primary font-semibold">Ciência da Computação</span> pela Universidade Federal de Sergipe (UFS) em maio de 2024 e atualmente estou no programa de pós-graduação (Mestrado) na mesma instituição, com linha de pesquisa voltada para <span className="text-primary font-semibold">Engenharia de Software</span>.
-            </p>
-            <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90">
-              Criei este portfólio para integrar informações sobre mim — minha formação, experiências profissionais, participação em projetos, cursos realizados, áreas de interesse e outras informações relevantes.
-            </p>
+            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+              {/* Foto */}
+              <div className="flex-shrink-0">
+                <div className="relative w-48 h-48 md:w-64 md:h-64">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-xl"></div>
+                  <img
+                    src="src/images/denisson.png"
+                    alt="Denisson Freitas"
+                    className="relative w-full h-full object-cover rounded-full border-4 border-primary/50 glow-border"
+                  />
+                </div>
+              </div>
+
+              {/* Texto */}
+              <div className="flex-1">
+                <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90 mb-6 text-justify">
+                  Olá! Sou <span className="text-primary font-semibold">Denisson Freitas</span>, desenvolvedor de software e pesquisador em <span className="text-primary font-semibold">Engenharia de Software</span>. Bacharel em Ciência da Computação pela Universidade Federal de Sergipe (UFS) desde maio de 2024, atualmente sou mestrando na mesma instituição, dedicando-me à pesquisa em Engenharia de Software.
+                </p>
+                <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90 mb-6 text-justify">
+                  Este portfólio reúne minha trajetória acadêmica e profissional, apresentando formação, experiências, projetos desenvolvidos, certificações, registros de software e áreas de especialização.
+                </p>
+                <p className="font-rajdhani text-lg md:text-xl leading-relaxed text-foreground/90 text-justify">
+                  Natural de Sergipe, cristão e movido pela paixão por tecnologia, busco constantemente evolução técnica e contribuições significativas para o ecossistema de TI.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">

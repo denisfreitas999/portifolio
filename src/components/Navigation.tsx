@@ -14,6 +14,8 @@ const Navigation = () => {
     { id: 'experience', label: 'Experiência' },
     { id: 'education', label: 'Formação' },
     { id: 'skills', label: 'Habilidades' },
+    { id: 'portfolio', label: 'Portifólio' },
+    { id: 'registros', label: 'Registros' },
     { id: 'contact', label: 'Contato' },
   ];
 
@@ -25,7 +27,7 @@ const Navigation = () => {
             <Shield className="w-8 h-8 text-primary animate-pulse-glow" />
             <span className="font-orbitron font-bold text-xl neon-text">DF</span>
           </div>
-          
+
           <ul className="hidden md:flex gap-6">
             {navItems.map((item) => (
               <li key={item.id}>

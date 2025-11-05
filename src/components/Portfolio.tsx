@@ -5,34 +5,98 @@ const Portfolio = () => {
   const projects = [
     {
       icon: Shield,
-      title: "Sistema de Autenticação Segura",
-      description: "API REST com JWT, criptografia avançada e proteção contra ataques comuns (CSRF, XSS, SQLi)",
-      tech: ["Java", "Spring Security", "PostgreSQL"],
-      github: "#",
+      title: "NodeJS-Autenticacao-JWT",
+      description: "API Rest em Node.js com autenticação, perfis de usuários e permissões de um sistema de supermercado.",
+      tech: ["Node.js", "JWT", "Express"],
+      github: "https://github.com/denisfreitas999/NodeJS-Autenticacao-JWT",
       live: "#"
     },
     {
       icon: Lock,
-      title: "Gerenciador de Dados LGPD",
-      description: "Plataforma para gestão de consentimento e direitos dos titulares conforme LGPD",
-      tech: ["React", "Node.js", "MongoDB"],
-      github: "#",
+      title: "NodeJS-JWT-CRYPTOGRAPHY",
+      description: "Explorando fundamentos da criptografia: cifras, funções de hash, transmissão segura, criptografia simétrica e assimétrica, tokens JWT e técnicas de mitigação.",
+      tech: ["Node.js", "JWT", "Cryptography"],
+      github: "https://github.com/denisfreitas999/NodeJS-JWT-CRYPTOGRAPHY",
       live: "#"
     },
     {
       icon: Database,
-      title: "Automação de Processos",
-      description: "Sistema de workflow automatizado com integração de APIs e notificações",
-      tech: ["Java", "Spring Boot", "RabbitMQ"],
-      github: "#",
+      title: "ORM-NodeJS-Sequelize-SQlite",
+      description: "API de uma plataforma de cursos utilizando ORM com Node.js, Sequelize e SQLite.",
+      tech: ["Node.js", "Sequelize", "SQLite"],
+      github: "https://github.com/denisfreitas999/ORM-NodeJS-Sequelize-SQlite",
       live: "#"
     },
     {
       icon: Brain,
-      title: "IA para Detecção de Anomalias",
-      description: "Sistema de machine learning para identificar padrões suspeitos em logs de acesso",
-      tech: ["Python", "TensorFlow", "FastAPI"],
-      github: "#",
+      title: "NodeJS-WebSockets",
+      description: "Projeto com WebSockets, implementando comunicações em tempo real com Socket.IO e MongoDB.",
+      tech: ["Node.js", "Socket.IO", "MongoDB"],
+      github: "https://github.com/denisfreitas999/NodeJS-WebSockets",
+      live: "#"
+    },
+    {
+      icon: Shield,
+      title: "Node-Unity-Integration-Tests",
+      description: "Testes de Unidade e Integração utilizando Node.js e Jest.",
+      tech: ["Node.js", "Jest", "Testing"],
+      github: "https://github.com/denisfreitas999/Node-Unity-Integration-Tests",
+      live: "#"
+    },
+    {
+      icon: Lock,
+      title: "QA-Robot-E2E-BDD-Test-Automation",
+      description: "Testes E2E Automatizados utilizando o framework Robot e o padrão Behavior Driven Development (BDD).",
+      tech: ["Robot Framework", "BDD", "E2E"],
+      github: "https://github.com/denisfreitas999/QA-Robot-E2E-BDD-Test-Automation",
+      live: "#"
+    },
+    {
+      icon: Database,
+      title: "QA-Cypress-E2E-Test-Automation",
+      description: "Testes E2E Automatizados utilizando o Cypress.",
+      tech: ["Cypress", "JavaScript", "E2E"],
+      github: "https://github.com/denisfreitas999/QA-Cypress-E2E-Test-Automation",
+      live: "#"
+    },
+    {
+      icon: Brain,
+      title: "Evolving-my-JS-to-TS",
+      description: "Melhorando experiência de desenvolvimento com TypeScript.",
+      tech: ["TypeScript", "JavaScript", "Node.js"],
+      github: "https://github.com/denisfreitas999/Evolving-my-JS-to-TS",
+      live: "#"
+    },
+    {
+      icon: Database,
+      title: "PostgreSQL-learning",
+      description: "Exploração e aprendizagem do SGBD PostgreSQL e da Linguagem PL/pgSQL.",
+      tech: ["PostgreSQL", "PL/pgSQL", "SQL"],
+      github: "https://github.com/denisfreitas999/PostgreSQL-learning",
+      live: "#"
+    },
+    {
+      icon: Database,
+      title: "MySQL-learning",
+      description: "Repositório exploratório para aprendizagem de SQL utilizando o SGBD MySQL.",
+      tech: ["MySQL", "SQL", "Database"],
+      github: "https://github.com/denisfreitas999/MySQL-learning",
+      live: "#"
+    },
+    {
+      icon: Shield,
+      title: "NodeJS-Melhorando-Fluxo-Dev",
+      description: "Node.js melhorando o fluxo de desenvolvimento e integração de equipe.",
+      tech: ["Node.js", "DevOps", "CI/CD"],
+      github: "https://github.com/denisfreitas999/NodeJS-Melhorando-Fluxo-Dev",
+      live: "#"
+    },
+    {
+      icon: Brain,
+      title: "Git-Github-Rep",
+      description: "Repositório de testes para comandos de Git e Github.",
+      tech: ["Git", "GitHub", "Version Control"],
+      github: "https://github.com/denisfreitas999/Git-Github-Rep",
       live: "#"
     }
   ];
@@ -95,11 +159,13 @@ const Portfolio = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="cyber-button border-primary text-primary hover:bg-primary/10">
-                    <Github className="w-4 h-4 mr-2" />
-                    Código
-                  </Button>
-                  <Button variant="outline" size="sm" className="cyber-button border-primary text-primary hover:bg-primary/10">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="cyber-button border-primary text-primary hover:bg-primary/10">
+                      <Github className="w-4 h-4 mr-2" />
+                      Código
+                    </Button>
+                  </a>
+                  <Button variant="outline" size="sm" className="cyber-button border-primary text-primary hover:bg-primary/10" disabled>
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
                   </Button>
@@ -110,7 +176,7 @@ const Portfolio = () => {
         </div>
 
         {/* Software Registrations */}
-        <div>
+        <div id="registros" className="scroll-mt-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4">
               <span className="text-primary">Registros</span> <span className="text-glow-cyan">de Software</span>
