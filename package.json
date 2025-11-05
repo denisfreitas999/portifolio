@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://denisfreitas999.github.io/portifolio/",
+  "homepage": "https://denisfreitas999.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
